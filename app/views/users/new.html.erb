@@ -1,0 +1,15 @@
+<h1>Create an Account!</h1>
+
+<%= render 'shared/errors'  %>
+
+<form action="<%= users_url %>" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token%>">
+
+  <label name="user[user_name]">Username</label>
+  <input type="text" name="user[user_name]">
+
+  <label for="user[password]">Password</label>
+  <input type="password" name="user[password]">
+
+  <input type="submit" value="SIGNUP FOR CATS">
+</form>
