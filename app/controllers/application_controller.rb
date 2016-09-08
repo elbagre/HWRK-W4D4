@@ -37,7 +37,6 @@ class ApplicationController < ActionController::Base
   end
 
   def owner
-    debugger
     cats = current_user.cats.where(id: current_cat.id)
     if cats.empty?
       flash[:errors] = ["STOP FOOLING!"]

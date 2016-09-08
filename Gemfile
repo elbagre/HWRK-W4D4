@@ -18,4 +18,5 @@ group :development do
   gem 'annotate'
   gem 'bcrypt'
   gem 'byebug'
+  gem 'letter_opener'
 end
